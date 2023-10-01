@@ -190,12 +190,12 @@ func get_input():
 	movement_dir = Input.get_vector("left","right","null","null").x
 	
 	if Input.is_action_just_pressed("left") || Input.is_action_just_pressed("right") :
+		
 		# -90 bis 90 normal
 		if rotation_degrees > 92 || (rotation_degrees < -92 && rotation_degrees > -200):
 			inv_mov = -1
 		else:
 			inv_mov = 1
-			
 
 
 	
