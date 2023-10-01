@@ -13,7 +13,7 @@ export var jump_height = 64.0
 export var jump_time_to_peak = 0.3
 export var jump_time_to_descent = 0.35
 
-export var can_climb = true
+export var can_climb = false
 export var climb_speed = 150
 export var can_double_jump = true
 export(int, 1, 100) var jump_count = 2
@@ -381,7 +381,7 @@ func boost():
 	return true
 
 func check_abilities():
-	can_climb = Global.has_ability("climb")
+	#can_climb = Global.has_ability("climb")
 	can_double_jump = Global.has_ability("double_jump")
 	#can_glide = Global.has_ability("glide")
 	can_gravity = Global.has_ability("gravity")

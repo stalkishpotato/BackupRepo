@@ -397,6 +397,9 @@ margin_right = -6.0
 margin_bottom = 1.0
 color = Color( 0.631373, 0.956863, 1, 1 )
 
+[node name="Load" type="Timer" parent="."]
+one_shot = true
+
 [node name="WorldMap" type="TileMap" parent="."]
 scale = Vector2( 4, 4 )
 tile_set = SubResource( 11 )
@@ -441,12 +444,9 @@ text = "A game made by YOUR NAME and Finn Pickart"
 [node name="Sign" type="Sprite" parent="WorldMap/DialogArea"]
 texture = ExtResource( 11 )
 
-[node name="Load" type="Timer" parent="WorldMap"]
-one_shot = true
-
-[node name="Player" parent="." instance=ExtResource( 5 )]
-position = Vector2( 466, 258 )
-scale = Vector2( 0.5, 0.5 )
+[node name="Player" parent="WorldMap" instance=ExtResource( 5 )]
+position = Vector2( 116.5, 64.5 )
+scale = Vector2( 0.125, 0.125 )
 speed = 800
 jump_height = 256.0
 climb_speed = 600
@@ -495,5 +495,5 @@ start_closed = true
 
 [node name="DialogArea" parent="." instance=ExtResource( 12 )]
 
-[connection signal="timeout" from="WorldMap/Load" to="." method="_on_Load_timeout"]
+[connection signal="timeout" from="Load" to="." method="_on_Load_timeout"]
 [connection signal="button_down" from="Play" to="." method="_on_Play_button_down"]
