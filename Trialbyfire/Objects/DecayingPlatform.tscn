@@ -7,14 +7,14 @@ extents = Vector2( 190.5, 72.0267 )
 
 [node name="Node2D" type="Node2D"]
 
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
+[node name="KinematicBody2D" type="KinematicBody2D" parent="."]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D"]
 position = Vector2( -0.500008, 16.5 )
 scale = Vector2( 1, 0.506757 )
 shape = SubResource( 1 )
 
-[node name="Sprite" type="Sprite" parent="StaticBody2D"]
+[node name="Sprite" type="Sprite" parent="KinematicBody2D"]
 position = Vector2( -3.05176e-05, 16.5 )
 scale = Vector2( 1, 0.506757 )
 texture = ExtResource( 1 )

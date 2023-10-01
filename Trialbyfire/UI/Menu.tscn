@@ -395,7 +395,7 @@ margin_left = -1.0
 margin_top = 3.0
 margin_right = -1.0
 margin_bottom = 3.0
-color = Color( 0.631373, 0.956863, 1, 1 )
+color = Color( 0.317647, 0.360784, 0.368627, 1 )
 
 [node name="Load" type="Timer" parent="."]
 one_shot = true
@@ -420,7 +420,7 @@ position = Vector2( 128, 184 )
 scale = Vector2( 256, 1 )
 
 [node name="Trampoline" parent="WorldMap" instance=ExtResource( 7 )]
-position = Vector2( 164, 78 )
+position = Vector2( 154.5, 71.25 )
 
 [node name="Trampoline2" parent="WorldMap" instance=ExtResource( 7 )]
 position = Vector2( 82, 60 )
@@ -460,7 +460,8 @@ margin_left = 16.0
 margin_top = -72.0
 margin_right = -16.0
 margin_bottom = -16.0
-text = ""
+text = "eat shit and die
+"
 
 [node name="Play" parent="." instance=ExtResource( 3 )]
 anchor_left = 0.5
