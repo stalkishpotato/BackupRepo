@@ -79,7 +79,7 @@ margin_bottom = -10.0
 text = "State"
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2( 6, 12 )
+position = Vector2( -9, -93 )
 offset = Vector2( 100, 50 )
 current = true
 zoom = Vector2( 0.62, 0.669 )

@@ -432,7 +432,7 @@ position = Vector2( 106, 34.25 )
 position = Vector2( 14, 86 )
 
 [node name="Coin3" parent="WorldMap" instance=ExtResource( 8 )]
-position = Vector2( 172, 120 )
+position = Vector2( 68.75, 114.25 )
 
 [node name="Coin4" parent="WorldMap" instance=ExtResource( 8 )]
 position = Vector2( 248, 68 )
